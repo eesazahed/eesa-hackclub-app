@@ -1,25 +1,18 @@
-if [ "$#" -ne 2 ]; then
-  echo "Error: Exactly two parameters required: OLDPORT NEWPORT"
+if [ "$#" -ne 1 ]; then
+  echo "Parameter required PORT"
   exit 1
 fi
 
-OLDPORT="$1"
-NEWPORT="$2"
+PORT="$1"
 
-if ! [[ "$OLDPORT" =~ ^[0-9]+$ ]]; then
-  echo "Error: OLDPORT must be a non-negative integer."
+if ! [[ "$PORT" =~ ^[0-9]+$ ]]; then
+  echo "PORT must be a non-negative integer."
   exit 1
 fi
 
-if ! [[ "$NEWPORT" =~ ^[0-9]+$ ]]; then
-  echo "Error: NEWPORT must be a non-negative integer."
-  exit 1
-fi
-
-
-kill -9 $(lsof -ti ":$OLDPORT") 2>/dev/null
+kill -9 $(lsof -ti ":$PORT") 2>/dev/null
 git pull
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-gunicorn -b ":$NEWPORT" app:app
+gunicorn -b ":$PORT" app:app
