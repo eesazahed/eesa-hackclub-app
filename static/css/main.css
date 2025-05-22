@@ -33,7 +33,7 @@ a:hover {
 
 .container {
   max-width: 40rem;
-  margin: 5rem auto;
+  margin: 2rem auto;
 }
 
 .navbar {
@@ -47,7 +47,6 @@ a:hover {
 }
 
 .nav-link {
-  text-decoration: underline;
   color: var(--description-color);
 }
 
@@ -102,8 +101,7 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-.section,
-.gallery {
+.section {
   margin-bottom: 4rem;
 }
 
@@ -139,6 +137,17 @@ a:hover {
 .gallery-image:hover {
   transform: scale(1.05);
   box-shadow: 0 0 #0000, 0 0 #0000, 0 0 35px #3af07c;
+}
+
+.footer {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  text-align: right;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
 }
 
 @media (max-width: 600px) {
