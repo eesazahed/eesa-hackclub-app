@@ -11,20 +11,22 @@ const images = [
 
 const gallery = document.getElementById("gallery");
 
-images.forEach(({ file, alt }) => {
-  const src = baseURL + file;
+document.addEventListener("DOMContentLoaded", () => {
+  images.forEach(({ file, alt }) => {
+    const src = baseURL + file;
 
-  const a = document.createElement("a");
-  a.className = "gallery-image-link";
-  a.href = src;
-  a.target = "_blank";
-  a.rel = "noopener noreferrer";
+    const a = document.createElement("a");
+    a.className = "gallery-image-link";
+    a.href = src;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
 
-  const img = document.createElement("img");
-  img.className = "gallery-image";
-  img.src = src;
-  img.alt = alt;
+    const img = document.createElement("img");
+    img.className = "gallery-image";
+    img.src = src;
+    img.alt = alt;
 
-  a.appendChild(img);
-  gallery.appendChild(a);
+    a.appendChild(img);
+    gallery.appendChild(a);
+  });
 });
