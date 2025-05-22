@@ -73,6 +73,11 @@ const myLinks = [
     description: "i never use it",
   },
   {
+    name: "instagram",
+    url: "https://instagram.com/eesazahed",
+    description: "i never use it",
+  },
+  {
     name: "bluesky",
     url: "https://bsky.app/profile/eszhd.bsky.social",
     description: "i never use it",

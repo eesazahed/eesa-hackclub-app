@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}{{ title }}{% endblock %} {% block
+content %}
+
+<section class="section">
+  <span class="header-name">gallery</span>
+  <br />
+  <br />
+  <p>all photographs are original works created by eesa zahed</p>
+  <p class="descriptions">
+    these are just a few of mine, you can find more
+    <a
+      href="https://eesazahed.github.io/album/"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >
+  </p>
+  <div class="gallery-images" id="gallery"></div>
+</section>
+
+<script src="./static/js/gallery.js"></script>
+
+{% endblock %}

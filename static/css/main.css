@@ -102,13 +102,12 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-.about,
+.section,
 .gallery {
   margin-bottom: 4rem;
 }
 
-.about p,
-.gallery p {
+.section p {
   margin: 1rem 0rem;
   line-height: 2rem;
 }
@@ -146,6 +145,11 @@ a:hover {
   .container {
     margin: 0rem auto;
   }
+
+  .navbar {
+    margin-bottom: 3rem;
+  }
+
   .gallery-image-link {
     flex: 1 1 90%;
     max-width: 90%;

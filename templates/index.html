@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}{{ title }}{% endblock %} {% block
+content %}
+
+<section class="header">
+  <div class="header-profile">
+    <span class="header-name">eesa z.</span>
+    <span class="description">student, tutor, full stack dev & more</span>
+  </div>
+  <div class="header-image">
+    <a
+      href="https://github.com/eesazahed"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="https://avatars.githubusercontent.com/u/97064249?v=4"
+        alt="my github pfp"
+      />
+    </a>
+  </div>
+</section>
+<section class="info">
+  <p class="info-description">
+    hi there, my name is eesa and i'm 16 years old.
+    <br /><br />
+    most of the time, i'm either studying, tutoring, coding, or playing sports
+    <br /><br />
+    my email is <span class="email">eszhd1 [at] gmail [dot] com</span>. send me
+    a message!
+  </p>
+  <p>links:</p>
+  <ul class="list" id="links"></ul>
+  <p>projects:</p>
+  <ul class="list" id="projects"></ul>
+</section>
+
+<script src="./static/js/main.js"></script>
+
+{% endblock %}
