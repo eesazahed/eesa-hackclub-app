@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --description-color: #90a1b9;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: #0cb5e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.body {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 10rem auto;
+}
+
+.navbar {
+  margin-bottom: 4rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: underline;
+  color: var(--description-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-style: italic;
+  color: var(--description-color);
+}
+
+.header-image {
+  max-width: 6rem;
+}
+
+.header-image img {
+  width: 100%;
+  border-radius: 100%;
+  transition: box-shadow 0.25s;
+  box-shadow: 0 0 0 #0000;
+}
+
+.header-image img:hover {
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 35px #3af07c;
+}
+
+.info-description {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.list {
+  margin-bottom: 2rem;
+}
+
+.list-item {
+  margin-bottom: 0.5rem;
+}
+
+.about,
+.gallery {
+  margin-bottom: 4rem;
+}
+
+.about p,
+.gallery p {
+  margin: 1rem 0rem;
+  line-height: 2rem;
+}
+
+.gallery-images {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.gallery-image-link {
+  flex: 1 1 45%;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-image {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3rem;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 0 0 #0000;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 35px #3af07c;
+}
+
+@media (max-width: 600px) {
+  .gallery-image-link {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  .body {
+    color: white;
+    background: #242424;
+  }
+}
