@@ -11,7 +11,7 @@ const myProjects = [
   },
   {
     name: "less letters",
-    url: "https://gratefultime.app/",
+    url: "https://lessletters.vercel.app/",
     description: "say it but with less letters",
   },
   {
@@ -38,6 +38,11 @@ const myProjects = [
     name: "quadratic-helper",
     url: "https://github.com/eesazahed/quadratic-helper",
     description: "helps with quadratic equations",
+  },
+  {
+    name: "eesa.hackclub.app",
+    url: "https://github.com/eesazahed/eesa-hackclub-app",
+    description: "this website",
   },
 ];
 
