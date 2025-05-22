@@ -33,11 +33,11 @@ a:hover {
 
 .container {
   max-width: 40rem;
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 .navbar {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 
 .nav-links {
@@ -89,7 +89,7 @@ a:hover {
 
 .info-description {
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .list {
@@ -156,7 +156,7 @@ a:hover {
   }
 
   .navbar {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 
   .gallery-image-link {
