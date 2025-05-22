@@ -33,11 +33,11 @@ a:hover {
 
 .container {
   max-width: 40rem;
-  margin: 10rem auto;
+  margin: 5rem auto;
 }
 
 .navbar {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .nav-links {
@@ -143,6 +143,9 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  .container {
+    margin: 0rem auto;
+  }
   .gallery-image-link {
     flex: 1 1 90%;
     max-width: 90%;
