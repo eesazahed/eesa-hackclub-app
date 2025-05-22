@@ -49,7 +49,7 @@ const myLinks = [
   },
   {
     name: "linkedin",
-    url: "https://linkedin.com/in/eszhd",
+    url: "https://www.linkedin.com/in/eszhd/",
     description: "my profile",
   },
   {
