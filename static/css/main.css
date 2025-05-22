@@ -27,6 +27,10 @@ a:hover {
   padding: 2rem;
 }
 
+.email {
+  color: #beab00;
+}
+
 .container {
   max-width: 40rem;
   margin: 10rem auto;
@@ -94,6 +98,7 @@ a:hover {
 }
 
 .list-item {
+  margin-left: -1rem;
   margin-bottom: 0.5rem;
 }
 
