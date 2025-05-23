@@ -27,7 +27,8 @@ a:hover {
   padding: 2rem;
 }
 
-.email {
+#email {
+  cursor: pointer;
   color: #beab00;
 }
 
@@ -110,6 +111,19 @@ a:hover {
   line-height: 2rem;
 }
 
+.hobbies-image {
+  margin-top: 2rem;
+  border-radius: 4rem;
+  width: 100%;
+  box-shadow: 0rem 0rem 0rem #0000;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.hobbies-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0rem 0rem 2rem #0db2ff;
+}
+
 .gallery-images {
   margin-top: 4rem;
   display: flex;
@@ -130,13 +144,13 @@ a:hover {
   width: 100%;
   object-fit: cover;
   border-radius: 3rem;
+  box-shadow: 0rem 0rem 0rem #0000;
   transition: transform 0.25s, box-shadow 0.25s;
-  box-shadow: 0 0 0 #0000;
 }
 
 .gallery-image:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 35px #3af07c;
+  box-shadow: 0rem 0rem 2rem #3af07c;
 }
 
 .footer {

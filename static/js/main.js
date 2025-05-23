@@ -117,13 +117,22 @@ function renderLink({ name, url, description, color }) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const projectsUl = document.querySelector("ul#projects");
+  const projectsUl = document.getElementById("projects");
   myProjects.forEach((project) => {
     projectsUl.appendChild(renderLink({ ...project, color: "#34c05a" }));
   });
 
-  const linksUl = document.querySelector("ul#links");
+  const linksUl = document.getElementById("links");
   myLinks.forEach((project) => {
     linksUl.appendChild(renderLink(project));
+  });
+
+  const email = document.getElementById("email");
+  email.addEventListener("click", (e) => {
+    if (!email.href.includes("mailto:")) {
+      e.preventDefault();
+      email.textContent = atob("ZWVzYUBoYWNrY2x1Yi5hcHA=");
+      email.href = `mailto:${email.textContent}`;
+    }
   });
 });

@@ -94,5 +94,15 @@ block content %}
       >avatar: the last airbender</a
     >. if you're into any of those as well, feel free to yap about it with me.
   </p>
+  <a
+    href="{{ url_for('static', filename='images/aot.png') }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      class="hobbies-image"
+      src="{{ url_for('static', filename='images/aot.png') }}"
+    />
+  </a>
 </section>
 {% endblock %}
