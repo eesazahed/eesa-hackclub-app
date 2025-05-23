@@ -111,19 +111,6 @@ a:hover {
   line-height: 2rem;
 }
 
-.hobbies-image {
-  margin-top: 2rem;
-  border-radius: 4rem;
-  width: 100%;
-  box-shadow: 0rem 0rem 0rem #0000;
-  transition: transform 0.25s, box-shadow 0.25s;
-}
-
-.hobbies-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0rem 0rem 2rem #0db2ff;
-}
-
 .gallery-images {
   margin-top: 4rem;
   display: flex;
@@ -151,6 +138,19 @@ a:hover {
 .gallery-image:hover {
   transform: scale(1.05);
   box-shadow: 0rem 0rem 2rem #3af07c;
+}
+
+.hobbies-image-link {
+  flex: 1 1 90%;
+  max-width: 90%;
+}
+
+.hobbies-image {
+  aspect-ratio: inherit;
+}
+
+.hobbies-image:hover {
+  box-shadow: 0rem 0rem 2rem #0db2ff;
 }
 
 .footer {
