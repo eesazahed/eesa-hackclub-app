@@ -5,6 +5,11 @@ const myProjects = [
     description: "digital gratitude journal",
   },
   {
+    name: "mysimplesat",
+    url: "https://github.com/eesazahed/mysimplesat-frontend/",
+    description: "AI SAT prep app",
+  },
+  {
     name: "laser social",
     url: "https://laser.vercel.app/feed",
     description: "functioning social media platform",
