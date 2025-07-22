@@ -55,7 +55,7 @@ const myLinks = [
   {
     name: "github",
     url: "https://github.com/eesazahed",
-    description: "my code",
+    description: "my repos",
   },
   {
     name: "linkedin",
