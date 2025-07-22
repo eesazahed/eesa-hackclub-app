@@ -122,15 +122,23 @@ function renderLink({ name, url, description, color }) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const projectsUl = document.getElementById("projects");
-  myProjects.forEach((project) => {
-    projectsUl.appendChild(renderLink({ ...project, color: "#34c05a" }));
-  });
-
   const linksUl = document.getElementById("links");
-  myLinks.forEach((project) => {
-    linksUl.appendChild(renderLink(project));
-  });
+
+  fetch("https://api.github.com/users/eesazahed")
+    .then((res) => res.json())
+    .then((data) => {
+      myLinks[0].description = `my ${data.public_repos || 0} public repos`;
+    })
+    .finally(() => {
+      for (const link of myLinks) {
+        linksUl.appendChild(renderLink(link));
+      }
+    });
+
+  const projectsUl = document.getElementById("projects");
+  for (const project of myProjects) {
+    projectsUl.appendChild(renderLink({ ...project, color: "#34c05a" }));
+  }
 
   const email = document.getElementById("email");
   email.addEventListener("click", (e) => {
