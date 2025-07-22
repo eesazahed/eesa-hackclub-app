@@ -161,7 +161,11 @@ a:hover {
 
 .footer p {
   font-size: 0.8rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.commit-link {
+  color: var(--description-color);
 }
 
 @media (max-width: 600px) {
